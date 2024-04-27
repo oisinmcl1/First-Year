@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    function AskForNumber() {
+      var txt = prompt("Enter a number between 1 and 100","");
+      var num = parseInt(txt);
+      if (isNaN(num)) {
+        alert("That's not a number!");
+        }
+      else if (num<1 || num>100) {
+        alert("That's not between 1 and 100!");
+        }
+      else {
+        alert("thank you");
+        }
+      }
+      </script>
+      
+      <head>
+        <body onload="AskForNumber();">Number</body>
+</html>

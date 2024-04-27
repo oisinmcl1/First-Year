@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Sem2Calenderstyle.css">
+        <script>
+            function createCalender() {
+                days = parseInt(document.getElementById("days").value);
+                start = parseInt(document.getElementById("start").value);
+                let today = new Date().getDate();
+
+                var tbodyRef = document.getElementById('table').getElementsByTagName('tbody')[0];
+                tbodyRef.innerHTML = "";
+                var daycount = 1;
+                var monthcount = 0;
+
+                for (i = 0; i < (days+start) / 7; i++) {
+                    var newRow = tbodyRef.insertRow();
+                    for (j = 0; j < 7; j++) {
+                        var newCell = newRow.insertCell();
+                        if (monthcount >= start){
+                            if (monthcount < days+start) {
+                                var newText = document.createTextNode("" + daycount);
+                                newCell.appendChild(newText);
+                                daycount++;
+                            } 
+                        }
+                        monthcount++;
+                    }
+                }
+                // console.log(days);
+                // console.log(start);
+                // console.log(today);
+                console.log(tbodyRef);
+            }
+        </script>
+    </head>
+    <body class = "page">
+        <title>Calender - Oisin Mc Laughlin 22441106</title>
+        <h1 class = "title">Calender - Oisin Mc Laughlin 22441106</h1>
+
+        <div class = "numofday">Number of days:</div>
+        <div class = "daystyle"><input type="number" id="days"></div><div class = "space1"><br></div>
+        <div class = "startday">Starting Day (0-6):</div>
+        <div class = "startdaystyle"><input type="number" id="start"></div>
+        <div class = "buttonstyle"><button onclick="createCalender()">Create Calendar</button></div><br><br>
+
+        <table id="table" class = "table">
+            <thead>
+                <tr>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>(2) Revision</title>
+        
+        <style>
+            body {
+                background-color: grey;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+
+        <script>
+            function handleClick() {
+                var input = document.getElementById("textid").value;
+                var output = "";
+
+                if (isNaN(parseInt(input))) {
+                    output = "Not Valid Number.";
+                }
+                else {
+                    output = "<h3>Times Tables of " + input + "</h3><br>";
+                    for (var i = 0; i < 10; i++) {
+                        var ans = (input * (i+1));
+                        output += input + " * " + (i+1) + " = " + ans + "<br>";
+                    }
+                }
+                document.getElementById("divid").innerHTML = output;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h3>Enter input into text box below:</h3><br>
+        <input type = "text" id = "textid" onkeyup = "handleClick();"><br><br>
+        <div id = "divid"></div>
+    </body>
+</html>

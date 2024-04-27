@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+        var clicked = false;
+
+	    function ismouseDown() {
+            clicked = true;
+        }
+        function ismouseUp() {
+            clicked = false;
+        }
+        
+        function moveTheVan(e) {
+            if (clicked == true) {
+                var oImg = document.getElementById("imgVan");
+		        oImg.style.left = e.clientX-(oImg.naturalWidth/2)+"px";
+                oImg.style.top = e.clientY-(oImg.naturalHeight/2)+"px";
+            }
+	    }
+    </script>
+    </head>
+    <body onmousemove="moveTheVan(event);" onmousedown="ismouseDown()" onmouseup="ismouseUp()">
+    <div style="width:100%; height:100%; background-color:#888888; position:absolute; left:0px; top:0px;">
+        <img id='imgVan' style='position:absolute; left:0px; top:0px;' src='dod.jpeg'>
+    </div>
+    </body>
+</html>

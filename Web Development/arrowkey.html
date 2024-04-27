@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            var leftPos = 800, topPos = 100;
+
+            function init() {
+                animate();
+
+                window.onkeydown = function(e) {
+                alert("You pressed: "+e.keyCode);
+                };
+
+                window.onkeyup = function(e) {
+                };
+
+            }
+
+            function animate() {
+                document.getElementById("divVan").style.left = leftPos+"px";
+                document.getElementById("divVan").style.top = topPos+"px";
+                window.setTimeout(animate, 20);
+	            }
+        </script>
+    </head>
+    <body onload="init();">
+        <div id='divVan' style='position:absolute; left:800px; top:100px'>
+        <img src='dod.jpeg'>
+    </div>
+    </body>
+</html>

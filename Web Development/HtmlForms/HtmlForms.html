@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="HtmlFormsStyle.css">
+        <title>HTML Forms</title>
+
+        <script>
+            function checks() {
+                var category = document.getElementById("listid").selectedIndex;
+                var question = document.getElementById("question").value;
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+
+                if (question == "Type query here..." || question == "" || name == "" || email == "") {
+                    alert("Empty text fields detected");
+                }
+                var checker = 0;
+                for (var i = 0; i <= email.length; i++) {
+                    if (email[i] == "@") {
+                        checker++;
+                    }
+                    if (email[i] == ".") {
+                        checker++;
+                    }
+                }
+                if (checker < 2 || checker > 2) {
+                    alert("Invalid email entered");
+                }
+            }
+        </script>
+    </head>
+    <body class = "page">
+        <table border="10">
+            <tr>
+                <td>
+                    Question Category
+                </td> 
+                <td>
+                    <select name="listlabel" id = "listid">
+                        <option value = "1">Goods for Sale</option>
+                        <option value = "2">Complaints</option>
+                        <option value = "3">Support</option>
+                    </select>
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    Question
+                </td>
+                <td>
+                    <textarea id = "question">Type query here...</textarea>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    Your Name
+                </td>
+                <td>
+                    <input id = "name">
+                </td> 
+            </tr>
+            <tr>
+                <td>
+                    Your Email
+                </td>
+                <td>
+                    <input id = "email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3"><div class = "button"><button onclick="checks();">Submit</button></div></td>
+            </tr>
+        </table>
+    </body>
+</html>

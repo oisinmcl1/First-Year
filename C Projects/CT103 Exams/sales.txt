@@ -1,0 +1,4 @@
+t-shirt 136
+shoes   122
+jacket  39
+dress   84

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script>
+  	var clicks=0, dblclicks=0, overs=0, 
+outs=0;
+
+  	function registerClick() {
+  		clicks++;
+  		updateResults();
+  	}
+  	function registerDblClick() {
+  		dblclicks++;
+  		updateResults();  		
+  	}
+  	function registerMouseOver() {
+  		overs++;
+  		updateResults();  		
+  	}
+  	function registerMouseOut() {
+  		outs++;
+  		updateResults();  		
+  	}
+  	function updateResults() {
+  		var txt = "Clicks: "+clicks
+  				+ "<br>Doubleclicks: "+dblclicks
+  				+ "<br>Mouseovers: "+overs
+  				+ "<br>Mouseouts: "+outs;
+  		document.getElementById("pOutput").innerHTML = txt;
+  	}
+  	</script>
+  </head>
+  <body onload="updateResults();">
+  	<img src='dod.jpeg' onclick='registerClick();' ondblclick='registerDblClick();' onmouseover='registerMouseOver();' onmouseout='registerMouseOut();'>
+  	<p id='pOutput'></p>
+  </body>
+</html>

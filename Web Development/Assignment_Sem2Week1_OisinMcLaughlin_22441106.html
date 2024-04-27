@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function posUpdate() {
+                var imgid = document.getElementById("dod");
+                imgid.style.left = Math.random() * 600 + "px";
+                imgid.style.top = Math.random() * 600 + "px";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="dod" onclick="posUpdate()" style='position:absolute; left:800px; top:100px'> 
+            <img src= dod.jpeg width="300" height="400">
+        </div>
+    </body>
+</html>

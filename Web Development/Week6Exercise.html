@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+	var nums = [];
+
+	function addNumber() {
+		var txt = document.getElementById("txtNumber").value;
+		var number = parseInt(txt);
+		if (isNaN(number))
+			alert(txt+" is not a number!");
+		else {
+			nums.push(number);
+			redrawTable();
+		}
+	}
+
+	function redrawTable() {
+		// write your code here!
+	}
+</script>
+</head>
+<body>
+	<input type='text' id='txtNumber'> <button onclick='addNumber();'>Add Number</button>
+	<p id="pOutput"></p>
+</body>
+</html>

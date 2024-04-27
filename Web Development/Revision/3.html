@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>(3) Revision</title>
+
+        <script>
+            var i = 1;
+            var leftPos = 800;
+
+            function imagecycle() {
+                document.getElementById("theGoblinImage").src = "goblin_" + i + ".png";
+
+                if (i > 5) {
+                    i = 1;
+                }
+                else {
+                    i++;
+                }   
+                setTimeout(imagecycle, 200); 
+            }
+            moveGoblin();   
+            
+            function moveGoblin() {
+                leftpos -= 2;
+                document.getElementById("theGoblin").style.left = leftPos+"px";
+                // setTimeout(moveGoblin(), 5000);
+            }
+        </script>
+    </head>
+
+    <body onload="imagecycle();">
+        <div style='position:absolute; left:200px; top:200px;' id='theGoblin'>
+        <img id='theGoblinImage' src='goblin_1.png'> </div>
+    </body>
+</html>

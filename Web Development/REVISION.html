@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Revision</title>
+        
+        <script>
+            function handleClick() {
+                var input = document.getElementById("textid").value;
+                alert("You typed: \n" + input);
+            }
+            function changestyle() {
+                document.getElementById("text").style.color = "400";
+            }
+        </script>
+
+    </head>
+
+    <body>
+        Your output will be shown here:<br><br>
+        <input type = "text" onfocus="changestyle();" id = "textid"><br><br>
+        <button onclick = "handleClick();">Click Me</button>
+    </body>
+</html>

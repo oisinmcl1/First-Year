@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Week 5 Assignment</title> 
+      <script>
+        var counter = 0;
+        function handleClick() {
+            counter ++;
+
+            if (counter == 1) {
+                document.getElementById("img").src="http://www.psychicsoftware.com/ct1113/banner-image-2.png";
+                }
+            if (counter == 2) {
+                document.getElementById("img").src="http://www.psychicsoftware.com/ct1113/banner-image-3.png";
+                }
+            if (counter == 3) {
+                document.getElementById("img").src="http://www.psychicsoftware.com/ct1113/banner-image-4.png";
+                }
+            if (counter == 4) {
+                document.getElementById("img").src="http://www.psychicsoftware.com/ct1113/banner-image-5.png";
+                }
+            if (counter == 5) {
+                document.getElementById("img").src="http://www.psychicsoftware.com/ct1113/banner-image-6.png";
+                }
+            if (counter === 6) {
+                counter = 1;
+                }
+
+            }
+             </script>
+  </head>
+<body>
+    <img id='img' onclick= 'handleClick();' src="http://www.psychicsoftware.com/ct1113/banner-image-1.png">
+</body>
+</html>

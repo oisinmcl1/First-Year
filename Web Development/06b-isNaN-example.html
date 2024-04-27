@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    	function test() {
+    		var str = prompt("Please type a number");
+    		if (isNaN(str)) {
+    			alert("That's not a number");
+			}
+    		else {
+    			var number = parseInt(str);
+				alert("The number is: " + number + " and multiplied by two is " + (number*2));
+			}
+    	}
+    </script>
+  </head>
+  <body>
+    <button onclick='test();'>Click Me!</button>
+  </body>
+</html>
+
+

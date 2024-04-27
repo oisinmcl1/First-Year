@@ -1,0 +1,30 @@
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.navigation {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation a:hover {
+  color: #666;
+}
+
+.content {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.footer {
+  text-align: center;
+  color: #999;
+}

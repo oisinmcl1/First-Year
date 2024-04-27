@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semester 2 Week 4 Graded Exercise - 22441106</title>
+        <script>
+            function array() {
+                var a = []
+                var sum = 0;
+                var avg = 0;
+                var lrg = 0;
+                var sml = 0;
+                var i = 0;
+
+                while(i < 100) {
+                    a[i] = Math.floor(Math.random() * 999);
+                    i++;
+                }
+
+                i = 0;
+                while(i < 100) {
+                    sum = sum += a[i];
+                    i++
+                }
+
+                avg = (sum / 100);
+
+                i = 0;
+                while(i < 100) {
+                    if (a[i] > lrg) {
+                        lrg = a[i];
+                    }
+                    else {
+                        i++
+                    }
+                }
+                i = 0;
+                sml = a[0];
+                while(i < 100) {
+                    if (a[i] < sml) {
+                        sml = a[i];
+                    }
+                    else {
+                        i++
+                    }
+                }
+
+                document.getElementById("para").innerHTML = "Sum: " + sum + "<br>Average: " + avg + "<br>Largest: " + lrg + "<br>Smallest " + sml + "<br>Numbers: " + a;
+            }
+        </script>
+    </head>
+    <body onload="array();">
+        <p id="para">
+        Sum: <br>
+        Average: <br>
+        Largest <br>
+        Smallest: <br>
+        Numbers:
+        </p>
+    </body>
+</html>

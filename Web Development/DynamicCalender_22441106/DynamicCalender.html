@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="DynamicCalenderStyle.css">
+    <title>Dynamic Calendar</title>
+    <script>
+        function createCalendar() {
+          var year = document.getElementById('year').value;
+          var month = document.getElementById('month').value;
+          var firstDay = (1 + (new Date(year, month - 1, 1).getTime() - new Date(1900, 0, 1).getTime()) / (1000 * 60 * 60 * 24)) % 7;
+          var daysInMonth = new Date(year, month, 0).getDate();
+          var calendarHtml = "<table> <tr> <th>Sun</th> <th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thu</th> <th>Fri</th> <th>Sat</th> </tr>";
+          var date = 1;
+          for (var i = 0; i < 6; i++) {
+            calendarHtml += '<tr>';
+            for (var j = 0; j < 7; j++) {
+              if (i === 0 && j < firstDay) {
+                calendarHtml += '<td></td>';
+              } 
+              else if (date > daysInMonth) {
+                calendarHtml += '<td></td>';
+              } 
+              else {
+                calendarHtml += '<td> ' + date + ' </td>';
+                date++;
+              }
+            }
+            calendarHtml += '</tr>';
+          }
+          calendarHtml += '</table>';
+          document.getElementById('calendar').innerHTML = calendarHtml;
+        }
+      </script>
+  </head>
+  <body class = "page">
+    <h1 class = "title">Dynamic Calendar - Oisin Mc Laughlin 22441106</h1>
+    <div class = "yearstyle">Enter year:</div>
+    <div class = "space1"><br></div>
+    <div class = "yearinputstyle"><input type="number" id="year" name="year" min="1900" max="2100"></div>
+    <div class = "space1"><br></div>
+    <div class = "monthstyle">Enter month:</div>
+    <div class = "monthinputstyle"><input type="number" id="month" name="month" min="1" max="12"></div>
+    <div class = "space1"><br></div>
+    <div class = "buttonstyle"><button type="button" onclick="createCalendar()">Create Calendar</button></div>
+    <div id="calendar"></div>
+  </body>
+</html>

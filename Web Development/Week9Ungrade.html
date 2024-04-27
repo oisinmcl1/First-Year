@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Week 10</title>
+    <script>
+        function processUserInput() {
+            var txt = document.getElementById("txtUserInput").value;
+            var txtOutput = "";
+            txtOutput += "<table id="pOutput" border="1"> <tr> <td>" + txt + "</td> </tr> </table>";
+
+            document.getElementById("pOutput").innerHTML = txtOutput;
+        }
+
+    </script>
+  </head>
+  <body>
+    <input type="text" id="txtUserInput">
+    <button onclick="processUserInput();">Process</button> 
+    <p id="pOutput"></p>
+  </body>
+</html>

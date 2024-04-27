@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Home - Borderlands
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function fixDigits(n) {
+                if (n < 10) {
+                    return "0" + n;
+                    }
+                else {
+                    return n;
+                    }
+                }
+            function updateClock() {
+                var date = new Date();
+		        var hour = date.getHours();
+		        var min = date.getMinutes();
+		        var sec = date.getSeconds();
+		var time = hour + ":" + min + ":" + sec;
+		window.setTimeout(updateClock, 1000);
+		document.getElementById("theClock").innerHTML = time; 
+	}
+        </script>
+    </head>
+    <body onload="updateClock();">
+        <table border="0">
+            <tr>
+             <td colspan="3" style="width:1400px;" class="header">Borderlands<br><div class="hometitle">Home</div></td>
+            </tr>
+            <tr>
+             <td class="navigation" style="width:15%;"><div class="navtitle">Navigation Menu</div><br>
+                <a href="home.html">Home</a><br>
+                <a href="about.html">About Us</a><br>
+                <a href="contact.html">Contact Information</a><br>
+                <p id="theClock" class="clock">00:00:00</p>
+            </td>
+             <td style="width:50%;" class="content"><div class="contenttitle">Our Shop</div><br> <img class="img" src=https://m.psecn.photoshelter.com/img-get/I0000B_VXc0uf_2k/s/1200/I0000B_VXc0uf_2k.jpg
+                height="400"
+                width="650"> <br>Borderland Muff is a company looking to make your outdoor and more adventures the best! Stocking all the top brands, our plethora of outdoor and indoor clothing, as well as accessories means our store is a one stop shop for all your needs, requirements and little extras.
+            </td>
+             <td style="width:35%;" class="other"><div class="othertitle">Items On Sale</div><br>Workware<br>Wetsuits<br>Skiware<br>Mens Clothes<br>Womens Clothes<br>Kids Clothes<br>Camping<br><br></td>
+            </tr> 
+            <tr>
+             <td colspan="3" style="width:100%;" class="footer"><div class="socialtitle"><br><br>Follow Us On Social Media</div><br>
+                <a href="https://www.facebook.com/borderlandmuff">Facebook</a><br>
+                <a href="https://www.instagram.com/borderlandmuff/">Instagram</a><br>
+                <a href="https://www.tiktok.com/@borderlandmuff">TikTok</a><br><br>
+                <div class="base">Borderland Muff © 2022<br>
+                Powered by O.McLaughlin2@NuiGalway.ie</div>
+                <br><br>
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>

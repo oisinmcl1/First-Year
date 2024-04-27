@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            About - Borderlands
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function fixDigits(n) {
+                if (n < 10) {
+                    return "0" + n;
+                    }
+                else {
+                    return n;
+                    }
+                }
+            function updateClock() {
+                var date = new Date();
+		        var hour = date.getHours();
+		        var min = date.getMinutes();
+		        var sec = date.getSeconds();
+		var time = hour + ":" + min + ":" + sec;
+		window.setTimeout(updateClock, 1000);
+		document.getElementById("theClock").innerHTML = time; 
+	}
+        </script>
+    </head>
+    <body onload="updateClock();">
+        <table border="0">
+            <tr>
+                <td colspan="3" style="width:1400px;" class="header">Borderlands<br><div class="hometitle">About</div></td>
+            </tr>
+            <tr>
+                <td class="navigation" style="width:15%;"><div class="navtitle">Navigation Menu</div><br>
+                    <a href="home.html">Home</a><br>
+                    <a href="about.html">About Us</a><br>
+                    <a href="contact.html">Contact Information</a><br>
+                    <p id="theClock" class="clock">00:00:00</p>
+                </td>
+             <td style="width:50%;" class="maininfo"><div class="maininfotitle">Borderland Muff Outdoor And More Donegal, Ireland</div> <br>Borderland Muff is a company looking to make your outdoor and more adventures the best! Stocking all the top brands, our plethora of outdoor and indoor clothing, as well as accessories means our store is a one stop shop for all your needs, requirements and little extras.
+                <br><br>Situated in Muff, Donegal Ireland, Borderland Muff Outdoor and More has made a name for itself within the area and surrounding. Our large shop location has enticed many customers from all over Ireland and the UK, due to our extensive range of items and brands we sell. We love the fact that many specifically come to Borderland Muff Outdoor and More for their outdoor supplies, and they appreciate our guidance and assistance when it comes to buying products for any of their outdoor activities.
+                <br><br>Offering an excellent service and high-quality products to our returning customers is a key belief for Borderland Muff for outdoor and more. We like to push this further by offering top brand products at good prices, making adventurous activities available for everyone to participate in. Whilst we are a large physical store, we look to help many more who can’t visit us, which is why we also have an online shop. This allows us to help more people find the products, clothes and gadgets they need for any trips and activities they’ll be doing.
+                <br><br>We’re passionate about the outdoors and want to share and develop that passion with all our customers. Borderland Muff Outdoor and More is dedicated to offering the best products which is why we offer new products daily, making sure that the most up-to-date and top of the range products are available to you. We even take this dedication one step further by allowing customers the ability to message us when we don’t have an item listed on our site. Borderland Muff will then try its hardest to help with requests by sourcing said item or looking for a high-quality alternative for your needs.
+                <br><br>Borderland Muff Outdoor and More, Donegal Ireland should be and will be your go to for all your future outdoor gear, and you’ll be glad you found us!<br><br>
+
+            </td>
+             <td style="width:35%;" class="otherinfo"><div class="otherinfotitle">What do we stock?</div><br>
+            <br>We offer an extensive range of workwear. This includes trousers, jackets, bodywarmers, overalls, safety footwear and accessories as well as the all-important HI Vis gear. We also offer Men’s, Ladies and Children’s clothing; all with the aim of keeping you warm, protecting you from any outdoor harm and also clothes you don’t mind getting that little bit dirty when you’re out camping. Other camping products which Borderland Muff Outdoor and More stocks are stoves and cookware, sleeping bags, tents, torches and much more! For those that participate in more specific activities, Borderland Muff has a range of Skiwear, perfect for your Easter Holiday getaways up on the slopes.
+            <br><br>As many of us look forward to the sun’s rays this year, get kitted for your days at the beach with our range of wetsuits. Something for the whole family, get the perfect wetsuit for your water sports such as surfing, paddle boarding, kayaking and more! We even have a plethora of accessories such as lifejackets, gloves and socks for the water as well as body boards. If you come to Borderland Muff Outdoor and More, you’ll be ready for the summer in no time!
+            <br><br>Just to name a few of the brands which Borderland Muff Outdoor and More stocks, we feature Apache, Saltrock, Typhoon and Hi Tec, check out all our brands we stock on the website menu to find the one you are looking for. There’s no denying that we have everything and more that you could possibly need. We want to make your preparation and experiences as easy as possible to allow you to focus on exploring, relaxing and all the fun activities you’ll get up to on your adventures. And if you’re new to all of this and don’t know where to start, we’ll be more than happy to offer you our expert advice and guidance on what you may require starting your adventurous journey. No request is too big for us, so let us help you become knowledgeable about the outdoors and ignite that inner explore of yours.
+            </td>
+            </tr> 
+            <tr>
+                <td colspan="3" style="width:100%;" class="footer"><div class="socialtitle"><br><br>Follow Us On Social Media</div><br>
+                    <a href="https://www.facebook.com/borderlandmuff">Facebook</a><br>
+                    <a href="https://www.instagram.com/borderlandmuff/">Instagram</a><br>
+                    <a href="https://www.tiktok.com/@borderlandmuff">TikTok</a><br><br>
+                    <div class="base">Borderland Muff © 2022<br>
+                    Powered by O.McLaughlin2@NuiGalway.ie</div>
+                    <br><br>
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>

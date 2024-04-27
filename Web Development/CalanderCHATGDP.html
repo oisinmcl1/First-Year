@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			margin: auto;
+		}
+		td {
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+		.today {
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calendar</h1>
+	<label for="days">Number of days in the month:</label>
+	<input type="number" id="days"><br>
+	<label for="day">Day of the week (0-6) that the 1st of the month falls on:</label>
+	<input type="number" id="day"><br>
+	<button onclick="generateCalendar()">Generate Calendar</button>
+	<div id="calendar"></div>
+	
+	<script>
+		function generateCalendar() {
+			const days = parseInt(document.getElementById("days").value);
+			const day = parseInt(document.getElementById("day").value);
+			
+			let calendar = "<table>";
+			calendar += "<tr>";
+			calendar += "<td>Sun</td>";
+			calendar += "<td>Mon</td>";
+			calendar += "<td>Tue</td>";
+			calendar += "<td>Wed</td>";
+			calendar += "<td>Thu</td>";
+			calendar += "<td>Fri</td>";
+			calendar += "<td>Sat</td>";
+			calendar += "</tr>";
+			
+			let date = 1;
+			for (let i = 0; i < 6; i++) {
+				calendar += "<tr>";
+				for (let j = 0; j < 7; j++) {
+					if (i === 0 && j < day) {
+						calendar += "<td></td>";
+					} else if (date > days) {
+						calendar += "<td></td>";
+					} else {
+						const today = new Date();
+						if (date === today.getDate()) {
+							calendar += "<td class='today'>" + date + "</td>";
+						} else {
+							calendar += "<td>" + date + "</td>";
+						}
+						date++;
+					}
+				}
+				calendar += "</tr>";
+			}
+			
+			calendar += "</table>";
+			document.getElementById("calendar").innerHTML = calendar;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Contact - Borderlands
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function fixDigits(n) {
+                if (n < 10) {
+                    return "0" + n;
+                    }
+                else {
+                    return n;
+                    }
+                }
+            function updateClock() {
+                var date = new Date();
+		        var hour = date.getHours();
+		        var min = date.getMinutes();
+		        var sec = date.getSeconds();
+		var time = hour + ":" + min + ":" + sec;
+		window.setTimeout(updateClock, 1000);
+		document.getElementById("theClock").innerHTML = time; 
+	}
+        </script>
+    </head>
+    <body onload="updateClock();">
+        <table border="0">
+            <tr>
+                <td colspan="3" style="width:1400px;" class="header">Borderlands<br><div class="hometitle">Contact</div></td>
+            </tr>
+            <tr>
+                <td class="navigation" style="width:15%;"><div class="navtitle">Navigation Menu</div><br>
+                    <a href="home.html">Home</a><br>
+                    <a href="about.html">About Us</a><br>
+                    <a href="contact.html">Contact Information</a><br>
+                    <p id="theClock" class="clock">00:00:00</p>
+                </td>
+             <td style="width:50%;" class="contact"><div class="contacttitle">You can contact us in the following ways</div><br>Borderland Muff, Main Street, Muff, Donegal, F93 DVX9.
+                <br><br>Shop phone - 00353 749384986<br>Warehouse phone - 00353 749327885
+                <br><br>E-mail - borderlandmuffsales@gmail.com
+                <br><br>Facebook message - @borderlandmuff<br>Instagram message - @borderlandmuff
+                <br><br>Google my business message- @borderlandmuff<br><br>
+            </td>
+             <td style="width:35%;" class="map"><div class="maptitle">Map</div><br>
+                <img src=https://www.google.com/maps/vt/data=nAniGNXNE3ZmzzIaZcIhPW2YGaxGoUy4D19Jll7MPmRfz1T_ErpQPYGyeS-f36mcnlrq-6O3kRQ9cThIf4H9BnDgpuEWaaoYvIlKSkXFhhG6EgtrrihDbhSiGOdjkUJ005zDu8j-L5qFE79O4_OjmINdT5BjKtq823vOBTQ0M8181i1at3bE5lMyq6ejblT6XF5Q
+                height="250"
+                width="375">
+                <br><br><a href="https://www.google.ie/maps/place/Borderland+Muff/@55.0688239,-7.2689419,17z/data=!3m1!4b1!4m5!3m4!1s0x48600824b7ea5bcd:0x9f5883e05f41ff9d!8m2!3d55.0688239!4d-7.2689419">Google Maps</a><br><br><br></td>
+            </tr> 
+            <tr>
+                <td colspan="3" style="width:100%;" class="footer"><div class="socialtitle"><br><br>Follow Us On Social Media</div><br>
+                    <a href="https://www.facebook.com/borderlandmuff">Facebook</a><br>
+                    <a href="https://www.instagram.com/borderlandmuff/">Instagram</a><br>
+                    <a href="https://www.tiktok.com/@borderlandmuff">TikTok</a><br><br>
+                    <div class="base">Borderland Muff © 2022<br>
+                    Powered by O.McLaughlin2@NuiGalway.ie</div>
+                    <br><br>
+            </td>
+            </tr>
+        </table>
+    </body>
+</html>

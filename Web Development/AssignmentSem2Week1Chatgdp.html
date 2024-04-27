@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      #container {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="image.jpg" alt="image">
+    </div>
+    <script>
+      var container = document.getElementById("container");
+
+      // Set the initial position of the div
+      container.style.left = Math.random() * 600 + "px";
+      container.style.top = Math.random() * 600 + "px";
+
+      // Move the div to a new random position when it is clicked
+      container.addEventListener("click", function() {
+        container.style.left = Math.random() * 600 + "px";
+        container.style.top = Math.random() * 600 + "px";
+      });
+    </script>
+  </body>
+</html>

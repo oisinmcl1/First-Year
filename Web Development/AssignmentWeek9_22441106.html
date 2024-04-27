@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script>
+	  	function updateOutput() {
+	  		var txt = document.getElementById("txtUserInput").value;
+	  		var numChars = txt.length;
+	  		var numWords = 0;
+            var txtOutput = "";
+			var emptyspace = false;
+			var previous = true;
+
+			txtOutput += "Number of Characters: " + numChars;
+            for (var i = 0; i < numChars; i++) {
+				if (txt.substr(i,1) == " ") {
+					emptyspace = true;
+				}
+				else {
+					emptyspace = false;
+				}
+				if (previous != emptyspace) {
+					previous = emptyspace;
+					if (!previous) {
+						numWords++
+					}
+				}
+            }
+			txtOutput += "<br>"
+			txtOutput += "Number of Words: " + numWords;
+	  		document.getElementById("pOutput").innerHTML = txtOutput; 
+	  	}
+  	</script>
+  </head>
+  <body>
+  	<textarea id='txtUserInput' onkeyup="updateOutput();" value="Type your text here."></textarea><br>
+  	<p id='pOutput'>
+  		Your output will be shown here.
+  	</p>
+  </body>
+</html>

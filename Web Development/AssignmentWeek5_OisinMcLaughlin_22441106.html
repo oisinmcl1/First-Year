@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Week 5</title> 
+      <script>
+        function handleClick() {
+            var name = window.prompt("What's your name?", "Enter your name");
+            var msg = "Hello " + name + " nice to meet you!";
+            var p = document.getElementById('myParagraph').innerHTML = msg;
+             }
+    </script>
+  </head>
+<body>
+    <button onclick='handleClick();'>Click here</button> 
+    <p id='myParagraph'>
+        Waiting on button click.
+    </p>
+</body>
+</html>

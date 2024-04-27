@@ -1,0 +1,146 @@
+.header {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    background-color: green;
+    text-align: center;    
+}
+.hometitle {
+    font-size: 50px;
+}
+
+.navigation {
+    font-size: 25px;
+    font-family: arial;
+    text-align: center;
+    color: grey;
+    background-color: greenyellow;
+}
+.navigation a:hover {
+    color: orange;
+  }
+.navtitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 5px grey;
+}
+.clock {
+    text-align:center; 
+    font-size:30px;
+}
+
+.content {
+    background-color: yellow;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+    color: blue;
+}
+.contenttitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 5px blue;
+}
+.img {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+.other {
+    background-color: black;
+    color: yellow;
+    font-size: 25px;
+    font-family: arial;
+    text-align: center;
+}
+.othertitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px yellow;
+}
+
+.footer{
+    background-image: url(https://media.istockphoto.com/id/607265224/photo/flag-of-county-donegal-is-a-county-in-ireland.jpg?s=170667a&w=0&k=20&c=JQJE6G1KDlbJNNzsGMXleTReX_RD88qtsT1ucOFsvyA=);
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    font-family: arial;
+}
+.footer a:hover {
+    color: pink;
+  }
+.socialtitle {
+    color: goldenrod;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px white;
+}
+.base {
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+}
+
+.maininfo {
+    background-color: grey;
+    color: gold;
+    font-size: 20px;
+    font-family: arial;
+    text-align: center;
+}
+.maininfotitle {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 3px 3px 5px gold;
+}
+
+.otherinfo {
+    background-color: blue;
+    color: pink;
+    font-size: 17px;
+    font-family: arial;
+    text-align: center;
+}
+.otherinfotitle {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: 3px 3px 5px pink;
+}
+
+.contact {
+    background-color: orange;
+    color: blue;
+    font-size: 25px;
+    font-family: arial;
+    text-align: center;
+}
+.contacttitle {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 3px 3px 5px blue;
+}
+
+.map {
+    background-color: darkcyan;
+    color: red;
+    font-size: 30px;
+    font-family: arial;
+    text-align: center;
+}
+.maptitle {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 3px 3px 5px red;
+}
+.map a:hover {
+    color: red;
+  }
